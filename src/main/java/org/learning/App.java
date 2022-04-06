@@ -21,7 +21,7 @@ public class App {
         We are using ApplicationContext to create a Bean
         getBean is method from ApplicationContext, but this method will give Object of Objects so we have to typeCase to Object to Vehicle
          */
-        Vehicle vehicle = (Vehicle) context.getBean("vehicle");
+        Vehicle vehicle = (Vehicle) context.getBean("car");
         vehicle.drive();
     }
 }
