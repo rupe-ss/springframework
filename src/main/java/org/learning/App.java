@@ -16,12 +16,12 @@ public class App {
         vehicle.drive();
         //But why even change a right side, to solve this we need a Spring Framework*/
 
-        ApplicationContext context = new ClassPathXmlApplicationContext();
+        ApplicationContext context = new ClassPathXmlApplicationContext("spring.xml");
         /*
         We are using ApplicationContext to create a Bean
         getBean is method from ApplicationContext, but this method will give Object of Objects so we have to typeCase to Object to Vehicle
          */
-        Vehicle vehicle = (Vehicle) context.getBean("vechile");
-        System.out.println("Hello World!");
+        Vehicle vehicle = (Vehicle) context.getBean("vehicle");
+        vehicle.drive();
     }
 }
