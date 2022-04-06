@@ -23,5 +23,8 @@ public class App {
          */
         Vehicle vehicle = (Vehicle) context.getBean("car");
         vehicle.drive();
+
+        Tyre tyre = (Tyre) context.getBean("tyre");
+        System.out.println(tyre);
     }
 }

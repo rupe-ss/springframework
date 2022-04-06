@@ -9,4 +9,8 @@
 
     <context:component-scan base-package="org.learning"></context:component-scan>
 <!--    <bean id="vehicle" class="org.learning.Car"></bean>-->
+
+    <bean id="tyre" class="org.learning.Tyre">
+        <property name="brand" value="Okahoma"></property>
+    </bean>
 </beans>
