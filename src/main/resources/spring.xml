@@ -11,6 +11,7 @@
 <!--    <bean id="vehicle" class="org.learning.Car"></bean>-->
 
     <bean id="tyre" class="org.learning.Tyre">
-        <property name="brand" value="Okahoma"></property>
+<!--        <property name="brand" value="Okahoma"></property>-->
+        <constructor-arg value="Okahoma Tyres"></constructor-arg>
     </bean>
 </beans>

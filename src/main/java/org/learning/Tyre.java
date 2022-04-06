@@ -3,6 +3,10 @@ package org.learning;
 public class Tyre {
     String brand;
 
+    public Tyre(String brand) {
+        this.brand = brand;
+    }
+
     public String getBrand() {
         return brand;
     }
