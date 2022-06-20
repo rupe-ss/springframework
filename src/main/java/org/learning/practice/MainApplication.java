@@ -1,8 +1,14 @@
 package org.learning.practice;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class MainApplication {
     public static void main(String[] args) {
-        Samsung samsung = new Samsung();
-        samsung.os();
+
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("practice.xml");
+
+        Phone phone = (Phone) applicationContext.getBean("samsung");
+        phone.os();
     }
 }
