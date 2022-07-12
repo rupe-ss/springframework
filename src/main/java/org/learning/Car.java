@@ -10,6 +10,6 @@ public class Car implements Vehicle {
     Tyre tyre;
 
     public void drive(){
-        System.out.println("I need car to drive." + " Good" + tyre);
+        System.out.println("I need car to drive." + " Good " + tyre.getBrand());
     }
 }
