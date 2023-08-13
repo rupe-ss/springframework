@@ -11,7 +11,7 @@
 <!--    <bean id="vehicle" class="org.learning.Car"></bean>-->
 
     <bean id="tyre" class="org.learning.Tyre">
-<!--        <property name="brand" value="Okahoma"></property>-->
-        <constructor-arg value="Okahoma Tyres"></constructor-arg>
+<!--        <property name="brand" value="Okahoma"></property> //when we do this type of configuration we are using Setter method in Tyre Class-->
+        <constructor-arg value="Okahoma Tyres"></constructor-arg> <!--To use constructor we have to do configuration like this.-->
     </bean>
 </beans>
