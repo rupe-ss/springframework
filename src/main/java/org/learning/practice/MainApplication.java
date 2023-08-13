@@ -10,5 +10,8 @@ public class MainApplication {
 
         Phone phone = (Phone) applicationContext.getBean("samsung");
         phone.os();
+
+        Phone iphone = (Phone) applicationContext.getBean("iphone");
+        iphone.os();
     }
 }
