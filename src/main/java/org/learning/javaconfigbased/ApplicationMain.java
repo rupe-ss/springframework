@@ -13,18 +13,33 @@ class Samsung{
     }
 }
 
+@Component
+class Iphone{
+    public void type(){
+        System.out.println("This is a iphone phone.");
+    }
+}
+
 @Configuration
+//This is a class that manage Bean, so we have to annotate this class with @Configuration
 class AnnotationConfig{
     @Bean
     public Samsung getPhone(){
         return new Samsung();
     }
+    @Bean
+    public Iphone getIphone(){
+        return new Iphone();
+    }
 }
 
 public class ApplicationMain {
     public static void main(String[] args) {
+        //Here we are passing AnnotationConfig.class because we don't have xml configuration.
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AnnotationConfig.class);
         Samsung samsung = applicationContext.getBean(Samsung.class);
         samsung.type();
+        Iphone iphone = applicationContext.getBean(Iphone.class);
+        iphone.type();
     }
 }
